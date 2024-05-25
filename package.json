@@ -1,0 +1,25 @@
+{
+  "name": "dg-portfolio",
+  "version": "1.0.0",
+  "description": "Dominic Gaona's portoflio shwocasing CV/Resume. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server",
+    "build": "babel . -d dist --minified",
+    "lint": "prettier --write \"**/*.{html,css,js,json}\""
+  },
+  "author": "Dominic Gaona",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-minify": "^0.5.2",
+    "live-server": "^1.2.2",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "axios": "^1.6.8"
+  }
+}

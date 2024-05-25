@@ -1,0 +1,67 @@
+/* MainLayout */
+.flex-mainlayout-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.n-item-left {
+  flex-basis: 0;
+  width: 0;
+}
+
+.n-item-right {
+  flex-basis: 1; /* Change this to expand the width of the main content*/
+  padding: 1em;
+  padding-top: 0 !important;
+  width: 100vw;
+}
+
+@media only screen and (min-width: 767px) {
+  .flex-mainlayout-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .n-item-left {
+    flex-basis: calc(100% - 200px);
+    width: 200px;
+  }
+
+  .n-item-right {
+    position: relative;
+    flex-basis: calc(
+      100% - 200px
+    ); /* Change this to expand the width of the main content*/
+    margin-left: 200px;
+    padding: 2.5em;
+    padding-top: 0;
+    width: calc(100% - 200px);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .n-item-right {
+    position: relative;
+    flex-basis: calc(
+      100% - 200px
+    ); /* Change this to expand the width of the main content*/
+    margin-left: 200px;
+    padding: 8em;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .n-item-right {
+    position: relative;
+    flex-basis: calc(
+      100% - 200px
+    ); /* Change this to expand the width of the main content*/
+    margin-left: 200px;
+    padding-top: 0;
+  }
+  .d-right-flex-wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me - Nick's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <link rel="stylesheet" href="../styles/pageHeader.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/mainlayout.css" />
+    <link rel="stylesheet" href="../styles/form.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <!-- Main layout -->
+    <main class="flex-mainlayout-container">
+      <div class="d-nav-container">
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu"
+          class="mobile-menu-button"
+          onclick="toggleMenu(event)"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <!-- Side navigation -->
+      <nav id="side-nav" class="nav-container n-item-left">
+        <!-- Top section -->
+        <div class="nav-top-container">
+          <!-- Profile image -->
+          <img src="../assets/images/1689264592783.jpg" />
+          <h2 class="h2-nav-top-title">Dominic Gaona</h2>
+        </div>
+        <!-- Middle section -->
+        <!-- Router Links -->
+        <div class="nav-mid-container">
+          <a class="link" href="/index.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Home</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/home-icon.svg" alt="Home Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./about.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>About</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/frame-icon.svg"
+                    alt="About me frame icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./resume.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Resume</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/resume-icon.svg" alt="Resume Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./projects.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Projects</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/projects-icon.svg"
+                    :alt="Projects Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./blogs.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Blogs</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="../assets/icons/blog-icon.svg" alt="Blogs Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./contact.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Contact</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="../assets/icons/contact-icon.svg"
+                    alt="Contact Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Bottom section -->
+        <div class="nav-bottom-container social-links-container">
+          <!-- Social links -->
+          <img src="/assets/icons/linkedin.png" />
+          <img src="/assets/icons/facebook.png" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <span>&copy 2024 Copyright powered by Nick</span>
+        </div>
+      </nav>
+
+      <div id="resume" class="resume n-item-right">
+        <div class="d-right-flex-wrapper">
+          <!-- Page Header -->
+          <div id="d-page-header-container">
+            <section id="s-about-header">
+              <div class="d-header-container">
+                <h2 class="d-header-title">Contact Me</h2>
+                <img class="svg-image" src="../assets/icons/resume-icon.svg" />
+              </div>
+            </section>
+          </div>
+          <!-- Experience Section -->
+          <section id="contact">
+            <div class="contact-me">
+              <h3 class="h3-contact-title mb">Let's Talk</h3>
+              <div class="d-contact-container">
+                <div class="d-contact-wrapper">
+                  <form action="#" class="f-contact-form">
+                    <fieldset class="form-field-container">
+                      <span class="span-field-wrapper">
+                        <input
+                          type="text"
+                          name="firstName"
+                          id="input-first-Name"
+                        />
+                        <label for="firstName" class="lb-text-placeholder"
+                          >First Name:</label
+                        >
+                      </span>
+                      <span class="span-field-wrapper">
+                        <input
+                          type="text"
+                          name="lastName"
+                          id="input-last-Name"
+                        />
+                        <label class="lb-text-placeholder" for="lastName"
+                          >Last Name:</label
+                        >
+                      </span>
+                      <span class="span-field-wrapper">
+                        <input type="text" name="subject" id="input-subject" />
+                        <label class="lb-text-placeholder" for="subject"
+                          >Subject:</label
+                        >
+                      </span>
+                      <span class="span-field-wrapper">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <label class="lb-text-placeholder" for="optional"
+                          >Optional:</label
+                        >
+                      </span>
+                    </fieldset>
+                    <button>Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section-contact-icons">
+            <ul class="ul-icons-container">
+              <li class="li-icon-wrapper">
+                <img src="../assets/icons/linkedin.png" />
+                <h5><a>example@example.com</a></h5>
+              </li>
+              <li class="li-icon-wrapper">
+                <img src="../assets/icons/linkedin.png" />
+                <h5><a>example@example.com</a></h5>
+              </li>
+              <li class="li-icon-wrapper">
+                <img src="../assets/icons/linkedin.png" />
+                <h5><a>example@example.com</a></h5>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="../scripts/nav.js"></script>
+    <script defer src="../scripts/fieldToggle.js"></script>
+  </body>
+</html>

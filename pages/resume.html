@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick's Portfolio - resume</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/mainlayout.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/resume.css" />
+    <link rel="stylesheet" href="../styles/pageHeader.css" />
+    <script defer src="../scripts/nav.js"></script>
+  </head>
+  <body>
+    <main class="flex-mainlayout-container">
+      <div class="d-nav-container">
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu"
+          class="mobile-menu-button"
+          onclick="toggleMenu(event)"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <!-- Side navigation -->
+      <nav id="side-nav" class="nav-container n-item-left">
+        <!-- Top section -->
+        <div class="nav-top-container">
+          <!-- Profile image -->
+          <img src="../assets/images/1689264592783.jpg" />
+          <h2 class="h2-nav-top-title">
+            Dominic Gaona
+          </h2>
+        </div>
+        <!-- Middle section -->
+        <!-- Router Links -->
+        <div class="nav-mid-container">
+          <a class="link" href="/index.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Home</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/home-icon.svg" alt="Home Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./about.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>About</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/frame-icon.svg"
+                    alt="About me frame icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./resume.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Resume</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/resume-icon.svg" alt="Resume Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./projects.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Projects</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/projects-icon.svg"
+                    :alt="Projects Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./blogs.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Blogs</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="../assets/icons/blog-icon.svg" alt="Blogs Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./contact.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Contact</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="../assets/icons/contact-icon.svg"
+                    alt="Contact Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Bottom section -->
+        <div class="nav-bottom-container social-links-container">
+          <!-- Social links -->
+          <img src="/assets/icons/linkedin.png" />
+          <img src="/assets/icons/facebook.png" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <span>&copy 2024 Copyright powered by Nick</span>
+        </div>
+      </nav>
+      <!-- main content -->
+      <div id="resume" class="resume n-item-right">
+        <div class="d-right-flex-wrapper">
+        <!-- Page Header -->
+        <div id="d-page-header-container">
+          <section id="s-about-header">
+            <div class="d-header-container">
+              <h2 class="d-header-title">My Resume</h2>
+              <img class="svg-image" src="../assets/icons/resume-icon.svg" />
+            </div>
+          </section>
+        </div>
+
+        <!-- Experience Section -->
+        <section id="experience">
+          <div class="core-section">
+            <!-- Left Section -->
+            <div class="core-left-section">
+              <h2 class="h2-experience-title">Experience</h2>
+              <!-- Experience Cards -->
+              <ul id="resume-card-container" class="ul-card-container">
+                <!-- javascript list card generated Here  -->
+              </ul>
+            </div>
+
+            <!-- Right Section -->
+            <div class="core-right-section">
+              <h2 class="h2-experience-title">Education</h2>
+              <!-- Education Cards -->
+              <ul id="ul-education-card-wrapper"
+                class="ul-card-container"
+              >
+            </ul>
+          </div>
+        </section>
+
+        <!-- Progress Bar Section -->
+        <section id="s-progressbar-section">
+          <h2>Skillset</h2>
+          <div class="progress-bars-container">
+            <div
+              class="progress-bar"
+            >
+              <h3 class="skill-name">{{ skill.skill }}</h3>
+              <!-- Display skill name as title -->
+              <div
+                class="progress-fill"
+                style="width:50%"
+              ></div>
+            </div>
+          </div>
+        </section>
+        </div>
+      </div>
+    </main>
+    <script type="module" defer src="../scripts/EducationCards.js"></script>
+    <script type="module" defer src="../scripts/ExperienceCards.js"></script>
+    <script src="../scripts/routes.js"></script>
+  </body>
+</html>

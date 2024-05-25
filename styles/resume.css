@@ -1,0 +1,226 @@
+/* Set font sizes using relative units */
+/* font styles */
+h1,
+h2,
+h4,
+p {
+  color: var(--color-light-text);
+}
+
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xl);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+  margin-bottom: 0.8em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xs);
+  color: var(--color-button-text);
+  margin-bottom: 1.8em;
+}
+
+p {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--color-button-text);
+}
+#resume {
+  width: 100%;
+}
+/* Adjust margins and paddings using relative units */
+.core-section,
+.core-left-section,
+.core-right-section,
+.li-experience-card {
+  margin-bottom: 2em;
+}
+
+.core-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+/* left card container and right container */
+.core-left-section,
+.core-right-section {
+  text-align: center;
+  width: 100%;
+}
+
+.h2-experience-title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+}
+
+/* Add styles for the right side of the core section */
+.ul-card-container {
+  padding: 4em;
+  padding-top: 0;
+  list-style-type: none;
+}
+
+.li-experience-card {
+  padding: 2em 2em;
+  border-left: 2px solid var(--color-primary-text);
+  position: relative; /* Ensure positioning context for absolute children */
+  text-align: left;
+  margin-bottom: 2em !important;
+}
+
+.li-experience-card h2 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.2em;
+}
+
+.li-experience-card h4 {
+  font-size: var(--fs-xxs);
+  color: var(--bg-Button-text);
+  margin-bottom: 1em;
+}
+
+.li-experience-card p {
+  line-height: 1.65;
+}
+
+.li-experience-card::before,
+.li-experience-card::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: calc(-10px + 2px); /* Adjusted for centering */
+  z-index: 10;
+  border-radius: 50%;
+  background-color: var(--color-primary-bg);
+  border: 2px solid var(--color-primary-text);
+}
+
+.li-experience-card::before {
+  top: 0;
+}
+
+.li-experience-card::after {
+  bottom: 0;
+}
+
+.d-start-date,
+.d-end-date {
+  position: absolute;
+  font-size: var(--fs-sm);
+  color: var(--text-color-normal);
+  margin-top: -20px; /* Adjust as needed to center vertically */
+}
+
+.d-start-date {
+  top: calc(10px + 2px);
+  left: calc(-20px + -32px); /* padding +  */
+}
+
+.d-end-date {
+  bottom: calc(-10px + 2px);
+  left: calc(-20px + -32px);
+}
+
+/* left card container */
+
+/* skills section */
+#s-progressbar-section {
+  text-align: center;
+}
+#s-progressbar-section h2 {
+  margin-bottom: 2em;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--color-light-text);
+}
+.progress-bars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.progress-bar {
+  flex: 0 1 calc(48% - 10px);
+  margin-bottom: 3em;
+  text-align: center;
+  border: 1px solid var(--color-primary-text);
+  border-radius: 5px;
+  position: relative; /* Position relative for absolute positioning */
+}
+
+.skill-name {
+  position: absolute;
+  top: -35px; /* Adjust distance above the progress bar */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: max-content; /* Set width to fit content */
+}
+
+.progress-fill {
+  position: relative;
+  height: 20px; /* Set the desired height of the progress fill */
+  background-color: var(--color-light-text);
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 5px); /* Center the arrow vertically */
+  right: -10px; /* Position the arrow at the end of the progress fill */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: calc(50% - 5px) solid var(--bg-Button-text); /* Match the background color of the progress fill */
+  transform: rotate(180deg); /* Make the arrow point up */
+}
+
+@media only screen and (min-width: 767px) {
+  .h2-experience-title {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+  }
+  .ul-card-container {
+    padding: 3em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .core-section {
+    flex-direction: row;
+  }
+  .core-left-section,
+  core-right-section {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .ul-card-container {
+    padding-right: 0;
+    padding-top:;
+  }
+  .li-experience-card {
+    padding-right: 0;
+  }
+}

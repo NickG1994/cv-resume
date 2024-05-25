@@ -1,0 +1,30 @@
+.d-header-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-normal);
+  color: var(--text-color-normal);
+}
+
+.d-header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.2em 0;
+  padding-bottom: 0.1em;
+  border-bottom: 1px solid var(--text-color-normal);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-style: dashed;
+  border-bottom-width: thin;
+  border-bottom-color: var(--color-primary-accent);
+}
+
+.d-about-container {
+  display: flex;
+  flex-direction: row;
+}
+.svg-image {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  color: var(--text-color-normal);
+  fill: var(--text-color-normal);
+}

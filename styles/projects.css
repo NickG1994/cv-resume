@@ -1,0 +1,12 @@
+#s-gallery {
+  text-align: center; /* Center align the contents */
+}
+
+.h2-gallery-title {
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+#s-gallery p {
+  text-align: left; /* Align the paragraph to the left */
+  margin-bottom: 40px;
+}

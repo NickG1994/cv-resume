@@ -1,0 +1,19 @@
+@media screen and (min-width: 767px) {
+  .flex-mainlayout-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .n-item-left {
+    flex-basis: 0;
+    width: 1;
+  }
+
+  .n-item-right {
+    flex-basis: 1; /* Change this to expand the width of the main content*/
+    width: 0;
+    margin-left: 0;
+    padding: 1em;
+    padding-top: 0 !important;
+    width: 100vw;
+  }
+}

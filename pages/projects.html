@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Nick's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/pageHeader.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/mainlayout.css" />
+    <link rel="stylesheet" href="../styles/projects.css" />
+    <link rel="stylesheet" href="../styles/gallery.css" />
+  </head>
+  <body>
+    <!-- Main layout -->
+    <main class="flex-mainlayout-container">
+      <div class="d-nav-container">
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu"
+          class="mobile-menu-button"
+          onclick="toggleMenu(event)"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <!-- Side navigation -->
+      <nav id="side-nav" class="nav-container n-item-left">
+        <!-- Top section -->
+        <div class="nav-top-container">
+          <!-- Profile image -->
+          <img src="../assets/images/1689264592783.jpg" />
+          <h2 class="h2-nav-top-title">Dominic Gaona</h2>
+        </div>
+        <!-- Middle section -->
+        <!-- Router Links -->
+        <div class="nav-mid-container">
+          <a class="link" href="/index.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Home</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/home-icon.svg" alt="Home Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./about.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>About</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/frame-icon.svg"
+                    alt="About me frame icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./resume.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Resume</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/resume-icon.svg" alt="Resume Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./projects.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Projects</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/projects-icon.svg"
+                    :alt="Projects Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./blogs.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Blogs</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="../assets/icons/blog-icon.svg" alt="Blogs Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./contact.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Contact</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="../assets/icons/contact-icon.svg"
+                    alt="Contact Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Bottom section -->
+        <div class="nav-bottom-container social-links-container">
+          <!-- Social links -->
+          <img src="/assets/icons/linkedin.png" />
+          <img src="/assets/icons/facebook.png" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <span>&copy 2024 Copyright powered by Nick</span>
+        </div>
+      </nav>
+
+      <div id="Projects-Container" class="d-projects-container n-item-right">
+        <div class="d-right-flex-wrapper">
+          <div id="d-page-header-container">
+            <section id="s-about-header">
+              <div class="d-header-container">
+                <h2 class="d-header-title">Projects</h2>
+                <img
+                  class="svg-image"
+                  src="../assets/icons/projects-icon.svg"
+                />
+              </div>
+            </section>
+          </div>
+
+          <section id="s-gallery">
+            <div>
+              <h3 class="h2-gallery-title">Our Projects</h3>
+              <p>
+                Welcome to our projects page! Below you can find a collection of
+                our latest projects.
+              </p>
+              <!-- image gallery here -->
+              <div class="d-gallery-grid">
+                <!-- gallery content -->
+                <div class="d-gallery-card">
+                  <a href="#">
+                    <img src="https://placehold.co/600x600" />
+                    <figure id="inner-card">
+                      <figcaption class="d-gallery-content">
+                        <h2>Way Wise Travel</h2>
+                        <h3>html, css, javascript</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="d-gallery-card">
+                  <a href="#">
+                    <img src="https://placehold.co/600x600" />
+                    <figure id="inner-card">
+                      <figcaption class="d-gallery-content">
+                        <h2>Way Wise Travel</h2>
+                        <h3>html, css, javascript</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="d-gallery-card">
+                  <a href="#">
+                    <img src="https://placehold.co/600x600" />
+                    <figure id="inner-card">
+                      <figcaption class="d-gallery-content">
+                        <h2>Way Wise Travel</h2>
+                        <h3>html, css, javascript</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="d-gallery-card">
+                  <a href="#">
+                    <img src="https://placehold.co/600x600" />
+                    <figure id="inner-card">
+                      <figcaption class="d-gallery-content">
+                        <h2>Way Wise Travel</h2>
+                        <h3>html, css, javascript</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="d-gallery-card">
+                  <a href="#">
+                    <img src="https://placehold.co/600x600" />
+                    <figure id="inner-card">
+                      <figcaption class="d-gallery-content">
+                        <h2>Way Wise Travel</h2>
+                        <h3>html, css, javascript</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="../scripts/nav.js"></script>
+    <script defer src="../scripts/card.js"></script>
+  </body>
+</html>

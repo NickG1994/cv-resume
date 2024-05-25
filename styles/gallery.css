@@ -1,0 +1,106 @@
+/* Portfolio section */
+.portfolio-container > h2,
+.h2-sect-title {
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-bold);
+  color: var(--text-color-normal);
+}
+
+.portfolio-container > p,
+.p-sect-content {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--bg-Button-text);
+}
+
+/* Gallery section */
+.d-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px 25px;
+}
+
+.d-gallery-card {
+  position: relative;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.d-gallery-card a {
+  position: block;
+  width: inherit;
+  height: inherit;
+}
+.d-gallery-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.d-gallery-content {
+  position: absolute;
+  inset: 0;
+  padding: 20px; /* Add padding inside the card */
+  color: white; /* Text color for gallery content */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  text-align: left;
+}
+.d-gallery-content h2 {
+  font-size: var(--fs-xxxs);
+}
+
+.d-gallery-content h3 {
+  font-size: var(--fs-xxs);
+}
+.d-gallery-content h2,
+.d-gallery-content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.d-gallery-content h2 {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 500ms ease-in;
+}
+
+.d-gallery-content h3 {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 500ms ease-in;
+}
+
+.d-gallery-card:hover .d-gallery-content h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.d-gallery-card:hover .d-gallery-content h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media only screen and (min-width: 767px) {
+  /* Gallery section */
+  .d-gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Gallery section */
+  .d-gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Gallery section */
+  .d-gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px 25px;
+  }
+}

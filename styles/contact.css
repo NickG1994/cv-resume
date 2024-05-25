@@ -1,0 +1,49 @@
+.h3-contact-title,
+.h4-contact-subtitle {
+  text-align: center;
+}
+
+.form-contact-container {
+  margin-top: 15px;
+}
+
+.ul-icons-container {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 150px;
+}
+
+.ul-icons-container > li {
+  text-align: center;
+  flex-wrap: wrap;
+  flex: 0.5 0.5 auto;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.ul-icons-container > li img {
+  width: 30px;
+}
+
+form > button {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.2em 0.8em;
+  font-size: var(--fs-sm);
+  color: var(--color-primary-text);
+  border: 2px solid var(--color-primary-text);
+  background-color: transparent;
+  margin: 0 auto;
+  margin: 40px auto 0 auto;
+}
+
+@media only screen and (min-width: 766px) {
+  .ul-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ul-icons-container li {
+  }
+}

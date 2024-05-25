@@ -1,0 +1,107 @@
+/* Global Styles */
+@font-face {
+  font-family: roboto-light;
+  src: url('../assets/Fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url('../assets/Fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: signature;
+  src: url('../assets/Fonts/Style_Script/StyleScript-Regular.ttf');
+}
+
+#main-content {
+  margin-bottom: 2.5em;
+}
+
+.d-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--fs-xl);
+}
+
+/* Left content */
+.d-about-left {
+  flex: 0.7;
+  margin-bottom: 20px;
+}
+
+.p-about-content {
+  font-size: var(--fs-xs);
+  color: var(text-color);
+  font-weight: var(--fw-normal);
+  width: 90%;
+  max-width: 90%;
+  margin-bottom: 0.8em;
+  line-height: 1.5em;
+}
+
+.h2-about-sign {
+  font-family: 'signature';
+  font-size: var(--fs-xl);
+}
+
+.a-cv-download {
+  border: 2px solid var(--color-primary-text);
+  padding: 0.5em 0.8em;
+}
+
+/* Right content */
+.d-about-right {
+  flex: 0.3;
+}
+
+.bold-text {
+  font-family: 'roboto-bold', 'Courier New', Courier, monospace;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xs);
+  border-bottom: 2px solid var(--color-primary-text);
+}
+
+.thin-text {
+  font-weight: var(--fw-thin);
+  font-size: var(--fs-);
+}
+
+.d-about-wrapper {
+  margin-bottom: 2.5em;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 1.6em;
+}
+
+li {
+  margin-bottom: 0.6em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  display: inline-block;
+}
+
+/* Service section */
+.d-flex-wrapper {
+  display: flex;
+}
+.d-card {
+  text-align: center;
+  padding: 1.2em;
+}
+
+.d-card > * {
+  margin-bottom: 0.9em;
+}
+@media only screen and (min-width: 767px) {
+  .d-about-wrapper {
+    flex-direction: row;
+  }
+  li {
+    margin-bottom: 0.8em;
+    margin-right: 0;
+    margin-left: 0;
+    display: block;
+  }
+}

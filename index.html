@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>home - Nick's Portfolio</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/mainlayout.css" />
+  </head>
+  <body>
+    <!-- Main layout -->
+    <main class="flex-mainlayout-container">
+      <div class="d-nav-container">
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu"
+          class="mobile-menu-button"
+          onclick="toggleMenu(event)"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <!-- Side navigation -->
+      <nav id="side-nav" class="nav-container n-item-left">
+        <!-- Top section -->
+        <div class="nav-top-container">
+          <!-- Profile image -->
+          <img src="../assets/images/1689264592783.jpg" />
+          <h2 class="h2-nav-top-title" style="margin-bottom:0;">Dominic Gaona</h2>
+        </div>
+        <!-- Middle section -->
+        <!-- Router Links -->
+        <div class="nav-mid-container">
+          <a class="link" href="/index.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Home</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/home-icon.svg" alt="Home Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./pages/about.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>About</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/frame-icon.svg"
+                    alt="About me frame icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./pages/resume.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Resume</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/resume-icon.svg" alt="Resume Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./pages/projects.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Projects</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/projects-icon.svg"
+                    :alt="Projects Icon"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="./pages/blogs.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Blogs</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img src="./assets/icons/blog-icon.svg" alt="Blogs Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+          <a class="link" href="/pages/contact.html">
+            <div class="slider-container">
+              <div class="nav-item">
+                <!-- Route name -->
+                <span>Contact</span>
+              </div>
+              <div class="nav-item">
+                <!-- Route icon -->
+                <span class="s-img-container"
+                  ><img
+                    src="./assets/icons/contact-icon.svg"
+                    alt="Contact Icons"
+                /></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Bottom section -->
+        <div class="nav-bottom-container social-links-container">
+          <!-- Social links -->
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <img src="/assets/icons/home-icon.svg" />
+          <span>&copy 2024 Copyright powered by Nick</span>
+        </div>
+      </nav>
+
+      <div id="home" class="home n-item-right">
+        <section id="hero">
+          <div class="d-hero-container">
+            <div class="d-hero-slider">
+              <div class="d-hero-slide">
+                <div class="hero-content-container">
+                  <h1>
+                    Hello, <br />
+                    My Name is <br />
+                    Dominic Gaona
+                  </h1>
+                  <h2>Back-End | Front-End Developer</h2>
+                  <button class="btn-hero-content">Click Here</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio">
+          <div class="portfolio-container">
+            <h3 class="sect-title">Portfolio</h3>
+            <p class="p-sect-content">
+              Embarking on each project, whether it's developed with Vue.js,
+              React.js, or WordPress, has been an exhilarating journey. Through
+              the process, I've not only honed my technical prowess but also
+              cultivated a deep sense of confidence. Innovating, designing,
+              building, and deploying these projects has been my passion,
+              propelling me to push the boundaries of what's possible.
+            </p>
+            <div class="d-gallery-grid">
+              <!-- gallery content -->
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about-me">
+          <div class="about-me-container">
+            <div class="d-content-wrapper left">
+              <h3 class="h3-sect-title">About Me</h3>
+              <p class="p-sect-content">
+                Lorem ipsum dolor sit amet consectetur. Orci viverra risus nisi
+                auctor dictum pharetra. Vitae in dui cursus aliquam aliquet vel.
+                Sapien aliquet molestie in massa ornare. Tellus parturient ut in
+                blandit eget odio. At dui ornare quam senectus non sed eget.
+                Egestas at in consectetur massa massa pulvinar molestie vel
+                iaculis. Purus cursus sit netus sagittis ultricies neque tempus
+                quam proin. Nibh sit sit eu urna. Nisl viverra potenti dui
+                vivamus tellus venenatis sagittis volutpat egestas. At porttitor
+                fringilla at faucibus in aliquam fringilla quisque. Urna diam
+                vel pellentesque dui aliquet.
+              </p>
+              <!-- Button Goes Here-->
+            </div>
+            <div class="d-content-wrapper right">
+              <!-- Image goes here-->
+              <img src="https://placehold.co/400x600" />
+            </div>
+          </div>
+        </section>
+
+        <section id="hobbies">
+          <div class="d-hobby-container">
+            <div class="d-hobby-content left">
+              <!-- Image goes here-->
+              <img src="https://placehold.co/400x600" />
+            </div>
+            <div class="d-content-wrapper">
+              <div class="d-hobby-content">
+                <h3 class="h3-sect-title">My Hobbies and Interest</h3>
+                <p class="p-sect-content">
+                  Lorem ipsum dolor sit amet consectetur. Aliquet enim viverra
+                  elementum justo sed etiam etiam. Enim morbi massa eu non
+                  tempor nascetur. Rhoncus tellus a volutpat interdum dui
+                  elementum. Nibh purus nulla faucibus nisi nunc arcu urna
+                  felis. Porta pretium dolor etiam vel tellus sit vestibulum
+                  scelerisque est. Fermentum lorem nibh libero urna id. Augue
+                  placerat in in faucibus in fames ac. Magna augue at dignissim
+                  mauris viverra tortor sit facilisis vitae. Amet at ante ut
+                  facilisis facilisis vitae varius. Tincidunt feugiat orci nec
+                  augue ut. Vel ultrices magna ullamcorper libero adipiscing.
+                  Massa in consequat congue scelerisque. Nibh dictum sed mi
+                  ullamcorper eget. Lectus vitae velit tellus sit turpis nulla
+                  nunc. Habitant libero purus at egestas. Proin ipsum eros
+                  fermentum volutpat. Dolor risus scelerisque aliquet velit sed
+                  et. Elit id condimentum et habitant volutpat aenean. Porttitor
+                  sagittis ullamcorper pulvinar odio nec aliquet magnis. Enim
+                  dapibus vestibulum ullamcorper pharetra lectus tortor vitae in
+                  elit. Turpis nec id faucibus non donec etiam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="s-recent-section">
+          <div class="d-recent-container">
+            <h3 class="h3-sect-title">Rcent Works</h3>
+            <p class="p-recent-paragraph">
+              Lorem ipsum dolor sit amet consectetur. Orci viverra risus nisi
+              auctor dictum pharetra. Vitae in dui cursus aliquam aliquet vel.
+              Sapien aliquet molestie in massa ornare. Tellus parturient ut in
+              blandit eget odio. At dui ornare quam senectus non sed eget.
+              Egestas at in consectetur massa massa pulvinar molestie vel
+              iaculis.
+            </p>
+            <div class="d-gallery-grid">
+              <!-- gallery content -->
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+              <div class="d-gallery-card">
+                <img src="https://placehold.co/100x100" />
+                <div class="d-gallery-content">
+                  <h2>Project Title</h2>
+                  <h3>Subtitle</h3>
+                  <p>
+                    This is a brief description of the project. It highlights
+                    the key features and technologies used.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="s-contact-section">
+          <div class="d-contact-container">
+            <div class="d-contact-wrapper">
+              <h3 class="h3-contact-title">Contact Me</h3>
+              <h4 class="h4-contact-subtitle">
+                Feel Free to contact me for any question
+              </h4>
+              <form action="" class="f-contact-form">
+                <fieldset class="f-field-container">
+                  <span class="s-field-wrapper">
+                    <input type="text" name="firstName" id="input-first-Name" />
+                    <label for="firstName" class="lb-text-placeholder"
+                      >First Name:</label
+                    >
+                  </span>
+                  <span class="s-field-wrapper">
+                    <input type="text" name="lastName" id="input-last-Name" />
+                    <label class="lb-text-placeholder" for="lastName"
+                      >Last Name:</label
+                    >
+                  </span>
+                  <span class="s-field-wrapper">
+                    <input type="text" name="subject" id="input-subject" />
+                    <label class="lb-text-placeholder" for="subject"
+                      >Subject:</label
+                    >
+                  </span>
+                  <span class="s-field-wrapper">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label class="lb-text-placeholder" for="optional"
+                      >Optional:</label
+                    >
+                  </span>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script defer src="./scripts/nav.js"></script>
+    <script defer src="./scripts/routes.js"></script>
+  </body>
+</html>

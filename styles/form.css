@@ -1,0 +1,65 @@
+/* Contact Form */
+.h2-contact-title {
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary-text);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.span-field-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.form-field-container {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  gap: calc(10px + 10px + 20px);
+}
+
+.span-field-wrapper label {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type='text'],
+textarea {
+  position: relative;
+  background-color: transparent;
+  z-index: 3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.span-field-wrapper:last-child label {
+  top: 10% !important;
+  transition: transform 500ms ease-in;
+}
+
+.span-field-wrapper input:focus ~ .lb-text-placeholder,
+.span-field-wrapper textarea:focus ~ .lb-text-placeholder {
+  transform: translateY(calc(-100% - 20px));
+  font-size: var(--fs-sm);
+  color: var(--color-button-text);
+  transition: transform 0.3s ease-in-out;
+}
+
+.lb-text-open {
+  transform: translateY(calc(-100% - 20px)) !important;
+  font-size: var(--fs-sm);
+  color: var(--color-button-text);
+  transition: transform 0.3s ease-in-out;
+}

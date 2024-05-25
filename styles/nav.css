@@ -1,0 +1,137 @@
+/* Nav */
+.nav-container {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-bg);
+  width: 0; /* Initially hidden */
+  overflow: hidden;
+  transition: width 0.3s ease; /* Smooth transition effect */
+  height: 100vh;
+  top: 0; /* Ensure nav container is attached to top of viewport. */
+}
+/* CSS for showing the nav */
+.nav-container.open {
+  width: 200px !important; /* Width of the nav when it's open */
+}
+.nav-top-container img {
+  width: 200px;
+  object-fit: contain;
+  background-size: contain;
+}
+.nav-top-container {
+  position: relative;
+  height: 200px;
+}
+/* Nav top section */
+.h2-nav-top-title {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding: 10px;
+  color: var(--color-light-text);
+}
+
+.h2-nav-top-title::before {
+  content: '';
+  position: inherit;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--color-primary-text);
+  opacity: 0.8;
+}
+
+.nav-mid-container {
+  padding: 1em;
+}
+
+.nav-bottom-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  text-align: center;
+  color: var(--color-light-text);
+}
+
+.nav-bottom-container > img {
+  width: 30px;
+  height: 30px;
+}
+
+.link {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  padding: 0.8em 1.2em;
+  background-color: var(--color-primary-text);
+  border-radius: 10px;
+  color: var(--color-light-text);
+}
+
+.nav-item:first-child {
+  width: inherit;
+  height: inherit;
+  color: var(--text-color);
+}
+
+.slider-container > .nav-item:last-child {
+  display: none;
+}
+.social-links-container {
+  width: 200px;
+}
+
+.social-links-container span {
+  display: inline-block;
+}
+
+.d-nav-container {
+  position: relative;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--color-primary-bg);
+  padding: 2%;
+  text-align: right;
+}
+.d-nav-container h6 {
+  text-align: center;
+}
+/* Hamburger menu */
+.mobile-menu-button {
+  width: 30px;
+  height: fit-content;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.mobile-menu-button > span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary-text);
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .nav-container {
+    width: 200px; /* Initially hidden */
+    top: 0; /* Ensure nav container is attached to top of viewport. */
+  }
+  .d-nav-container {
+    display: none;
+  }
+}
